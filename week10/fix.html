@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .div{
+      background-color: #eee;
+      margin: 10px;
+      padding: 10px;
+    }
+    .name{
+      background-color: #ff0000;
+      font-size: 30px;
+    }
+    img{
+      height: 100px;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+  </div>
+  <div>
+    <div>
+      <img src="daa" alt="">
+      <h1>Espreso</h1>
+    </div>
+    <div>
+      <img src="daa" alt="">
+      <h1>Espreso</h1>
+    </div>
+    <div>
+      <img src="daa" alt="">
+      <h1>Espreso</h1>
+    </div>
+    <div>
+      <img src="daa" alt="">
+      <h1>Espreso</h1>
+    </div>
+    <button onclick="tampilcart()">Menampilkan cart</button>
+  </div>
+</body>
+</html>
+<script>
+  const data = [
+    {
+      key: 1,
+      name: "Shampoo",
+      img: "https://pdkjateng.go.id/balaipendidikan/packages/tugumuda/assets/img/default-large.jpg"
+    },
+    {
+      key: 2,
+      name: "Pasta Gigi",
+      img: "https://pdkjateng.go.id/balaipendidikan/packages/tugumuda/assets/img/default-large.jpg"
+    },
+    {
+      key: 3,
+      name: "Sabun",
+      img: "https://pdkjateng.go.id/balaipendidikan/packages/tugumuda/assets/img/default-large.jpg"
+    }
+  ]
+
+  let cart = []
+
+  data.forEach((e, i) => {
+    // console.log(e.name)
+    document.getElementById("container").innerHTML += `
+      <div class="div" id="${e.key}">
+        <div class="name">${e.name}</div>
+        <div><img src="${e.img}"></div>
+        <button onclick="deleted(${e.key})">Delete</button>
+        <button onclick="addToCart(${e.key})">Add to cart</button>
+      </div>
+    `
+  })
+
+  const deleted = (key) => {
+    console.log(key)
+    document.getElementById(key).remove()
+  }
+
+  const tampilcart = () => {
+    console.log(cart)
+  }
+
+  const addToCart = (id) => {
+    console.log(id)
+    const obj = data.find((e) => {
+      if(e.key === id){
+        return e
+      }
+    })
+    console.log(obj)
+    cart.push(obj)
+  }
+
+</script>

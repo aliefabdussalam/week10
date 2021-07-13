@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="user">user 0</div>
+    <div class="user">user 1</div>
+    <div class="user">user 2</div>
+    <div class="user">user 3</div>
+    <div class="user">user 4</div>
+    <button onclick="testing()">testing</button>
+</body>
+</html>
+<script>
+    const testing = () =>{
+        document.getElementsByClassName('user')[2].style='color: red'
+        document.getElementsByClassName('user')[2].setAttribute('id', 'user2')
+    }
+</script>

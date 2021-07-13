@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript print array</title>
+    <style>
+        .div{
+            margin: 20pt;
+            background-color: grey;
+        }
+        img{
+            margin: 20pt;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      const data = [
+            {
+                product_name: 'noodle',
+                id :1,
+                price: 10000,
+                picture: "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//93/MTA-2583228/indomie_indomie-goreng-mie-instan--85g--_full02.jpg",
+                is_ready: true,
+                description: "instant noodle for your amazing day"
+            },
+            {
+                product_name: 'milk',
+                id :2,
+                price: 15000,
+                picture: "https://cdn.monotaro.id/media/catalog/product/cache/877fcb35590cc62c03a65c52f73f09cd/S/0/S003809754-1.jpg",
+                is_ready: true,
+                description: "fresh milk from nearby country side"
+            },
+            {
+                product_name: 'chocolate',
+                id :3,
+                price: 20000,
+                picture: "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//88/MTA-3058116/silverqueen_silver-queen-almond-65g_full02.jpg",
+                is_ready: true,
+                description: "perfect gift for your girl"
+            }
+      ]
+      const chart = []
+      data.forEach((e, i) => {
+        document.getElementById("container").innerHTML += `
+        <div class="div" id="${e.id}">
+        <div>${e.product_name}</div>
+        <div><img src="${e.picture}"></div>
+        <div>${e.price}</div>
+        <div>${e.description}</div>
+        <button onclick="selected(${e.id})">delete</button><button onclick="add(${e.id})">add to chart</button>
+        </div>`
+      });
+      const selected = (id) =>{
+        document.getElementById('container').remove()
+        console.log(id)
+      } 
+      const add = (id) =>{
+       console.log(data[id])
+       chart.push()
+      }
+    </script>
+  </body>
+</html>

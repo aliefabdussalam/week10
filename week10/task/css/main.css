@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Airbnb Cereal App Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('./AirbnbCerealBook.woff.woff'), url('AirbnbCerealBook.woff') format('woff');
+    }
+
+body{
+    padding: 0%;
+    margin: 0%;
+    
+}
+main{
+    display: flex;
+    font-family: 'Airbnb Cereal App Book';
+}
+.div{
+    margin: 5pt;
+    background-color: #BEC3CA4D;
+
+}
+/* img{
+    height: 150px;
+    width: 200px;
+} */
+.row{
+    display: flex;
+}
+.item-product{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.content{
+    padding-top: 20px;
+    background-color: #BEC3CA4D;
+    margin-right: 15px;
+}
+.sidebar{
+    align-items: center;
+    margin-right: -15px;
+}
+.sidebar .sideimage{
+    height: 50px;
+    width: 50px;
+    margin: 10pt;
+}
+.empty-img{
+    height: 150px;
+    width: 150px;
+    margin-bottom: -20px;
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    
+}
+.cart .item{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.cartEmpty{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.empty-text1{
+    color: #CECECE;
+    margin: 0%;
+}
+.cart-item{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.desc{
+    margin-left: 10px;
+}
+.product_name-cart{
+    font-weight: bold;
+    font-size: 20px;
+}
+.price{
+  
+    margin-left: 100px;
+
+}
+.qty{
+    margin: 5px;
+
+}
+.quantity{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.min{
+    border-color:   #82DE3A;
+    background-color: #82DE3A33;
+    color: #82DE3A;
+    border-style: solid;
+}
+.plus{
+    border-color:   #82DE3A;
+    background-color: #82DE3A33;
+    color: #82DE3A;
+    border-style: solid;
+}
+.btn-checkout{
+    background-color: #57CAD5;
+    border-style: none;
+    color: white;
+    height: 40px;
+}
+.btn-cancel{
+    background-color:  #F24F8A;
+    border-style: none;
+    color: white;
+    height: 40px;
+}
+.priceStyle{
+    font-size: 15px;
+    font-weight: 800;
+}

@@ -1,0 +1,16 @@
+nav{
+    display: flex;  
+    box-shadow: 1px 1px 10px #CCCCCC;     
+    font-family: 'Airbnb Cereal App Book';
+}
+.search{
+    background: #EFEEEE;
+    border-radius: 30px;
+    width: 150px;
+    height: 24px;
+    border-style: none;
+    padding-left: 10pt;
+}
+.heading{
+    font-weight: bold;
+}

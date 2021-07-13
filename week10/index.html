@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 id="h1">hello world</h1>
+        <button onclick="changebg()"> change color</button>
+        <button id="btnChangeh1">change h1</button>
+        <div id="contoh1"> 
+            <h1>ini h1</h1>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    const changebg = () =>{
+        // console.log('test berhasil')
+        document.getElementById('container').style = `background-color: blue;`
+    } 
+    document.getElementById('btnChangeh1').addEventListener('click', ()=>{
+        // console.log('test')
+        document.getElementById('h1').innerHTML = 'hello fazztrack'
+    })
+    const changecontoh1 = () =>{
+        document.getElementById()
+    }
+</script>
