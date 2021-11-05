@@ -128,3 +128,36 @@ main{
     font-size: 15px;
     font-weight: 800;
 }
+.btn-checkout{
+    position: absolute;
+    top: 600px;
+    width: 425px;
+}
+.btn-cancel{
+    position: absolute;
+    top: 650px;
+    width: 425px;
+}
+.styleTotal{
+    position: absolute;
+    top: 575px;
+    font-weight: bold;
+}
+.price{
+    
+    font-weight: bold;
+    font-size: 16px;
+}
+.checkout{
+    width: 440px;
+}
+.blue{
+    border: none;
+    background-color:  #57CAD5;
+    color: white;
+}
+.pink{
+    border: none;
+    background-color: #F24F8A;
+    color: white;
+}
